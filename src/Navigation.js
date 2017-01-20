@@ -3,6 +3,7 @@ import React from 'react';
 import {AppRegistry} from 'react-native';
 import platformSpecific from './deprecated/platformSpecificDeprecated';
 import Screen from './Screen';
+import CustomNavButton from './CustomNavButton/CustomNavButton';
 
 import PropRegistry from './PropRegistry';
 
@@ -141,5 +142,6 @@ export default {
   showInAppNotification: showInAppNotification,
   dismissInAppNotification: dismissInAppNotification,
   startTabBasedApp: startTabBasedApp,
-  startSingleScreenApp: startSingleScreenApp
+  startSingleScreenApp: startSingleScreenApp,
+  CustomNavButton: CustomNavButton
 };

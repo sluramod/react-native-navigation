@@ -1,10 +1,10 @@
+#import <React/RCTRootView.h>
+#import <React/RCTRootViewDelegate.h>
+#import <React/RCTConvert.h>
+#import <objc/runtime.h>
+#import "RCTHelpers.h"
 #import "RCCLightBox.h"
 #import "RCCManager.h"
-#import "RCTRootView.h"
-#import "RCTRootViewDelegate.h"
-#import "RCTConvert.h"
-#import "RCTHelpers.h"
-#import <objc/runtime.h>
 
 const NSInteger kLightBoxTag = 0x101010;
 
@@ -64,8 +64,6 @@ const NSInteger kLightBoxTag = 0x101010;
         
         [self.reactView.contentView.layer addObserver:self forKeyPath:@"frame" options:0 context:nil];
         [self.reactView.contentView.layer addObserver:self forKeyPath:@"bounds" options:0 context:NULL];
-        
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onRNReload) name:RCTReloadNotification object:nil];
     }
     return self;
 }

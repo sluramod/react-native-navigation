@@ -1,6 +1,6 @@
 #import "RCCManager.h"
-#import "RCTBridge.h"
-#import "RCTRedBox.h"
+#import <React/RCTBridge.h>
+#import <React/RCTRedBox.h>
 #import <Foundation/Foundation.h>
 
 @interface RCCManager() <RCTBridgeDelegate>
@@ -37,8 +37,6 @@
   if (self)
   {
     self.modulesRegistry = [@{} mutableCopy];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onRNReload) name:RCTReloadNotification object:nil];
   }
   return self;
 }

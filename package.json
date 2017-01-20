@@ -1,6 +1,6 @@
 {
-  "name": "react-native-navigation",
-  "version": "2.0.0-experimental.0",
+  "name": "react-native-navigation-x",
+  "version": "2.0.0",
   "description": "React Native Navigation - truly native navigation for iOS and Android",
   "license": "MIT",
   "nativePackage": true,
@@ -9,13 +9,13 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bugs": {
-    "url": "https://github.com/wix/react-native-navigation/issues"
+    "url": "https://github.com/sluramod/react-native-navigation/issues"
   },
-  "homepage": "https://github.com/wix/react-native-navigation",
-  "readme": "https://github.com/wix/react-native-navigation#readme",
+  "homepage": "https://github.com/sluramod/react-native-navigation",
+  "readme": "https://github.com/sluramod/react-native-navigation#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wix/react-native-navigation.git"
+    "url": "https://github.com/sluramod/react-native-navigation.git"
   },
   "main": "src/index.js",
   "scripts": {
