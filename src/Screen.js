@@ -63,7 +63,8 @@ class Navigator {
   }
 
   showInAppNotification(params = {}) {
-    return Navigation.showInAppNotification(params);
+    let newParams = {...params, navigatorEventId: this.navigatorEventID};
+    return Navigation.showInAppNotification(newParams);
   }
 
   dismissInAppNotification(params = {}) {

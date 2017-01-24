@@ -1,7 +1,8 @@
-
-#import "RCCNotification.h"
+#import <React/RCTEventDispatcher.h>
 #import <React/RCTRootView.h>
+#import "RCCNotification.h"
 #import "RCTHelpers.h"
+#import "RCCManager.h"
 
 @interface NotificationView : UIView
 @property (nonatomic, strong) RCTRootView *reactView;
@@ -291,7 +292,12 @@
     {
         completion();
     }
-    
+
+      [[[RCCManager sharedInstance] getBridge].eventDispatcher sendAppEventWithName:[self.params valueForKeyPath:@"passProps.navigatorEventID"] body:@
+       {
+         @"type": @"dismissAnimationEnded"
+       }];
+
     [self removeFromSuperview];
 }
 
